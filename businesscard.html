@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор визиток</title>
+    <link rel="stylesheet" href="styles/cardstyles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Онлайн-конструктор визиток</h1>
+        <div class="toolbar">
+            <label>Цвет фона: 
+                <input type="color" id="background-color">
+            </label>
+            <button id="add-text">Добавить текст</button>
+            <label>Цвет текста: 
+                <input type="color" id="text-color" value="#000000">
+            </label>
+            <button id="upload-logo">Загрузить логотип</button>
+            <label>Ширина логотипа: 
+                <input type="number" id="logo-width" min="50" max="500" value="100">
+            </label>
+            <label>Высота логотипа: 
+                <input type="number" id="logo-height" min="50" max="300" value="50">
+            </label>
+            <button id="download">Скачать PNG</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="business-card" width="500" height="300"></canvas>
+        </div>
+    </div>    
+    <script src="js/cardscript.js"></script>
+</body>
+</html>
