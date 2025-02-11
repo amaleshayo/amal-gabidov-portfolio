@@ -801,26 +801,22 @@ body{
     font-size: 16px;
 }
 
-#keksogramCountdown {
-    display: inline-block;
-    margin-top: 10px;
+#projectCountdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: var(--color--main-text);
-    background-color: var(--color--fourth-text);
-    border: 2px solid var(--color--decorative-text);
+    background: var(--color--secondary-background);
+    padding: 15px 20px;
     border-radius: 10px;
-    padding: 10px 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    min-width: 200px;
+    min-height: 100px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#keksogramCountdown:hover {
-    transform: scale(1.1);
-    background-color: var(--color--main-text);
-    color: var(--color--fourth-text);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .career{

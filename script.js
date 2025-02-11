@@ -25,36 +25,43 @@
   
   descriptionText.addEventListener('mouseover', toggleDescription);
   
-// Таймер до начала проекта
-const keksogramCountdown = document.getElementById('keksogramCountdown');
+// Получаем элемент таймера
+const projectCountdown = document.getElementById('projectCountdown');
 
-const now = new Date();
-const keksogramStartDate = new Date();
+// Устанавливаем даты
+const startDate = new Date('2025-02-11T00:00:00');
+const endDate = new Date('2025-04-14T23:59:59');
 
+function updateProjectCountdown() {
+    const now = new Date();
 
-keksogramStartDate.setDate(now.getDate() + 1);
-keksogramStartDate.setHours(10, 0, 0, 0);
-
-function updateKeksogramCountdown() {
-    const now = new Date(); 
-    const diff = keksogramStartDate - now;
-
-    if (diff <= 0) {
-        keksogramCountdown.textContent = 'Проект начался!';
-        return;
+    if (now < startDate) {
+        const diff = startDate - now;
+        projectCountdown.textContent = `Старт через: ${formatTime(diff)}`;
+    } 
+    else if (now >= startDate && now < endDate) {
+        const diff = endDate - now;
+        projectCountdown.innerHTML = `Проект в процессе!<br>Оставшееся время: ${formatTime(diff)}`;
+    } 
+    else {
+        projectCountdown.textContent = 'Проект завершён!';
     }
+}
 
+// Функция форматирования времени
+function formatTime(diff) {
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-    keksogramCountdown.textContent = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+    return `${days}д ${hours}ч ${minutes}м ${seconds}с`;
 }
 
-// Обновляем таймер каждую секунду
-setInterval(updateKeksogramCountdown, 1000);
-updateKeksogramCountdown();
+// Запускаем таймер и обновляем каждую секунду
+setInterval(updateProjectCountdown, 1000);
+updateProjectCountdown();
+
   // СМЕНИТЬ ТЕМУ
   document.addEventListener('DOMContentLoaded', () => {
       const themeToggle = document.querySelector('.themes');
