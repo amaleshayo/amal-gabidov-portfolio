@@ -819,6 +819,24 @@ body{
     cursor: pointer;
 }
 
+#sixCitiesCountdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color--main-text);
+    background: var(--color--secondary-background);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    min-width: 200px;
+    min-height: 100px;
+    cursor: pointer;
+}
+
 .career{
     padding: 60px 60px 80px;
     display: flex;
