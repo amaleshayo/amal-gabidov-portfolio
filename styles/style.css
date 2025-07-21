@@ -41,7 +41,6 @@ img{
 
 body{
     background: var(--color--background);
-    zoom: 80%;
 }
 
 .themes {
@@ -272,7 +271,7 @@ body{
   color: var(--color--main-text);
   text-align: center;
   padding: 8px 12px;
-  border-radius: 8px; 
+  border-radius: 8px;
   position: absolute;
   bottom: 110%;
   left: 50%;
@@ -422,7 +421,7 @@ body{
     filter:grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
 }
-  
+
 .figma__svg:hover {
     filter: grayscale(0%);
     cursor: pointer;
@@ -504,23 +503,23 @@ body{
 }
 
 .icon-container i {
-  position: absolute; 
-  font-size: 50px; 
+  position: absolute;
+  font-size: 50px;
   color: var(--color--main-text);
-  top: 20px; 
+  top: 20px;
   left: 0;
   transition: transform 0.1s ease, font-size 0.3s ease;
 }
 
 #brainIcon {
-    font-size: 50px; 
+    font-size: 50px;
     color: var(--color--third-text);
     transition: color 0.3s ease, transform 0.3s ease;
   }
-  
+
   #brainIcon.active {
-    color: var(--color--decorative-element); 
-    transform: scale(1.1); 
+    color: var(--color--decorative-element);
+    transform: scale(1.1);
   }
 
 .slider {
@@ -670,7 +669,7 @@ body{
 .project-card{
     position: relative;
     width: 25%;
-    height: 420px;
+    height: 480px;
     padding: 20px;
     background: var(--color--fourth-text);
     border-radius: 10px;
@@ -1012,7 +1011,7 @@ body{
 }
 
 @media screen and (max-width: 1230px) {
-    
+
     .hero__image{
         width: 100%;
     }
@@ -1033,7 +1032,7 @@ body{
     .skills__desc{
         padding-right: 20px;
     }
-    
+
     .skills__desc h3{
         font-size: 26px;
     }
@@ -1070,7 +1069,7 @@ body{
 }
 
 @media screen and (max-width: 992px) {
-    
+
     .navbar{
         padding: 20px 30px;
     }
@@ -1136,7 +1135,7 @@ body{
 
 
 @media screen and (max-width: 768px) {
-    
+
     .navbar__actions{
         display: none;
     }

@@ -1,0 +1,15 @@
+{
+  "name": "amal-gabidov-portfolio",
+  "version": "1.0.0",
+  "description": "Добро пожаловать в мой личный веб-портфолио! Здесь вы найдете информацию обо мне, моих навыках, опыте работы и проектах, над которыми я работал.",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
